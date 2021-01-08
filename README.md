@@ -1,16 +1,10 @@
-# skeleton-ansible-role #
+# ansible-role-host-information #
 
-[![GitHub Build Status](https://github.com/cisagov/skeleton-ansible-role/workflows/build/badge.svg)](https://github.com/cisagov/skeleton-ansible-role/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/skeleton-ansible-role.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/skeleton-ansible-role/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/skeleton-ansible-role.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/skeleton-ansible-role/context:python)
+[![GitHub Build Status](https://github.com/mcdonnnj/ansible-role-host-information/workflows/build/badge.svg)](https://github.com/mcdonnnj/ansible-role-host-information/actions)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/mcdonnnj/ansible-role-host-information.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mcdonnnj/ansible-role-host-information/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/mcdonnnj/ansible-role-host-information.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mcdonnnj/ansible-role-host-information/context:python)
 
-This is a skeleton project that can be used to quickly get a new
-[cisagov](https://github.com/cisagov) Ansible role GitHub project
-started.  This skeleton project contains
-[licensing information](LICENSE), as well as
-[pre-commit hooks](https://pre-commit.com) and
-[GitHub Actions](https://github.com/features/actions) configurations
-appropriate for an Ansible role.
+A toy Ansible role to get information about a host.
 
 ## Requirements ##
 
@@ -33,15 +27,8 @@ Here's how to use it in a playbook:
   become: yes
   become_method: sudo
   roles:
-    - skeleton
+    - host_information
 ```
-
-## New Repositories from a Skeleton ##
-
-Please see our [Project Setup guide](https://github.com/cisagov/development-guide/tree/develop/project_setup)
-for step-by-step instructions on how to start a new repository from
-a skeleton. This will save you time and effort when configuring a
-new repository!
 
 ## Contributing ##
 
