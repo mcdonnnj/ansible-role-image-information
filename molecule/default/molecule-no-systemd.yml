@@ -25,14 +25,14 @@ platforms:
     image: debian:buster-slim
   - name: debian11
     image: debian:bullseye-slim
+  - name: debian12
+    image: debian:bookworm-slim
   - name: kali
     image: kalilinux/kali-rolling
-  - name: fedora32
-    image: fedora:32
-  - name: fedora33
-    image: fedora:33
-  - name: ubuntu16
-    image: ubuntu:xenial
+  - name: fedora34
+    image: fedora:34
+  - name: fedora35
+    image: fedora:35
   - name: ubuntu18
     image: ubuntu:bionic
   - name: ubuntu20
