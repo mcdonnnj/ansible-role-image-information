@@ -1,8 +1,7 @@
 # ansible-role-host-information #
 
 [![GitHub Build Status](https://github.com/mcdonnnj/ansible-role-host-information/workflows/build/badge.svg)](https://github.com/mcdonnnj/ansible-role-host-information/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/mcdonnnj/ansible-role-host-information.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mcdonnnj/ansible-role-host-information/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/mcdonnnj/ansible-role-host-information.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mcdonnnj/ansible-role-host-information/context:python)
+[![CodeQL](https://github.com/mcdonnnj/ansible-role-host-information/workflows/CodeQL/badge.svg)](https://github.com/mcdonnnj/ansible-role-host-information/actions/workflows/codeql-analysis.yml)
 
 A toy Ansible role to get information about a host.
 
@@ -31,10 +30,12 @@ Here's how to use it in a playbook:
 
 ```yaml
 - hosts: all
-  become: yes
+  become: true
   become_method: sudo
-  roles:
-    - host_information
+  tasks:
+    - name: Display host information
+      ansible.builtin.include_role:
+        name: host_information
 ```
 
 ## Contributing ##
@@ -57,4 +58,4 @@ with this waiver of copyright interest.
 
 ## Author Information ##
 
-First Last - <first.last@trio.dhs.gov>
+First Last - <first.last@gwe.cisa.dhs.gov>

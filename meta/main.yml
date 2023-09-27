@@ -1,8 +1,14 @@
 ---
+# Note that dependencies listed here are automatically installed
+# before this role.  Role variables for any roles listed here can be
+# assigned static variables.
+#
+# See also cisagov/skeleton-ansible-role#153.
+dependencies: []
 galaxy_info:
   author: First Last
-  description: Host information Ansible role
   company: CISA Cyber Assessments
+  description: Host information Ansible role
   galaxy_tags:
     - information
   license: CC0
@@ -11,29 +17,27 @@ galaxy_info:
   # OS family.  This simplifies a lot of things for roles that support
   # Kali Linux, so it makes sense to force the installation of Ansible
   # 2.10 or newer.
-  min_ansible_version: 2.10
+  min_ansible_version: "2.10"
   namespace: cisagov
   platforms:
-    - name: Amazon
+    - name: Amazon Linux
       versions:
-        - 2
+        - "2023"
     - name: Debian
       versions:
-        - stretch
         - buster
         - bullseye
-        # Kali linux isn't an option here, but it is based on
-        # Debian Testing:
-        # https://www.kali.org/docs/policy/kali-linux-relationship-with-debian
         - bookworm
     - name: Fedora
       versions:
-        - 34
-        - 35
+        - "37"
+        - "38"
+    - name: Kali
+      versions:
+        - "2023"
     - name: Ubuntu
       versions:
-        - bionic
         - focal
+        - jammy
   role_name: host_information
-
-dependencies: []
+  standalone: true
