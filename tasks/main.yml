@@ -1,16 +1,16 @@
 ---
 - name: Display distribution
-  debug:
+  ansible.builtin.debug:
     msg: "{{ ansible_distribution }}"
 
 - name: Display distribution release
-  debug:
+  ansible.builtin.debug:
     msg: "{{ ansible_distribution_release }}"
 
 - name: Display distribution version
-  debug:
+  ansible.builtin.debug:
     msg: "{{ ansible_distribution_version }}"
 
 - name: Display OS family
-  debug:
+  ansible.builtin.debug:
     msg: "{{ ansible_os_family }}"
