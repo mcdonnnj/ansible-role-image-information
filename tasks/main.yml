@@ -14,3 +14,7 @@
 - name: Display OS family
   ansible.builtin.debug:
     msg: "{{ ansible_os_family }}"
+
+- name: Gather package facts
+  ansible.builtin.package_facts:
+    manager: auto
